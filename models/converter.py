@@ -1,7 +1,7 @@
 import tensorflow as tf
 # Convert the model
 
-model = tf.keras.models.load_model("savedModel.h5")
+model = tf.keras.models.load_model("ThisOneIsOk6.h5")
 converter = tf.lite.TFLiteConverter.from_keras_model(model) # path to the SavedModel directory
 tflite_model = converter.convert()
 
